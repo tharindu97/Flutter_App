@@ -113,6 +113,40 @@ class _HomePageState extends State<HomePage> {
                             height: 15.0,
                           )
                         ],
+                      ),
+                      SizedBox(height: 45.0,),
+                      Padding(
+                        padding: EdgeInsets.only(left: 15),
+                        child: Text('Hi Welcom',
+                          style: TextStyle(
+                            fontSize: 25.0,
+                            fontWeight: FontWeight.normal
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 25.0,
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(left: 15, right: 15),
+                        child: Material(
+                          elevation: 5.0,
+                          borderRadius: BorderRadius.circular(25),
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              border: InputBorder.none,
+                              prefixIcon: Icon(Icons.search,
+                                color: Colors.amber,
+                                size: 30.0,
+                              ),
+                              contentPadding: EdgeInsets.only(left: 20,top: 15,bottom: 10),
+                              hintText: 'Search',
+                              hintStyle: TextStyle(
+                                color: Colors.pink
+                              )
+                            ),
+                          ),
+                        ),
                       )
                     ],
                   ),
